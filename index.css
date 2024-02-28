@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #dc77a9;
+}
+
+nav {
+    background-color: rgb(18, 96, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+}
+
+#button-1:hover {
+    cursor: pointer;
+    background-color: rgb(184, 17, 51);
+}
+
+h1 {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+}
+
+.gamecontainer {
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    margin: 0px auto;
+}
+
+.container {
+    margin: 50px auto;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 11vw);
+    grid-template-rows: repeat(3, 11vw);
+}
+
+.box {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Anta", sans-serif;
+    background-color: #ee90bf;
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: rgb(195, 202, 161);
+}
+
+span {
+    font-size: 3vw;
+}
+
+.gameinfo {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    font-style: normal;
+    margin: 30px auto;
+    width: 37%;
+}
+
+#start {
+    font-family: "Protest Revolution", sans-serif;
+}
+
+
+.imgbox img {
+    width: 0px;
+    height: auto;
+    transition: width 1s ease-in-out, height 1s ease-in-out;
+    display: flex;
+    margin-top: 30px;
+}
+
+.info {
+    font-size: 0px;
+    transition: font-size 1s ease-in-out;
+    margin-top: 17px;
+}
+
+.br {
+    border-right: none;
+}
+
+.bl {
+    border-left: none;
+}
+
+.bt {
+    border-top: none;
+}
+
+.bb {
+    border-bottom: none;
+}
+
+#button-1 {
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 2rem;
+    color: white;
+    background-color: crimson;
+    align-self: center;
+}
+
+#btn3 {
+    position: absolute;
+    background-color: rgb(4, 146, 139);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+audio {
+    height: 1px;
+    width: 1px;
+}
+
+.data {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#start {
+    margin-bottom: 10px;
+    align-self: center;
+    font-size: 3vw;
+    box-sizing: border-box;
+    padding: 1px 4px;
+    border-radius: 3px;
+    background-color: rgb(162, 162, 238);
+    box-shadow: 1px 1px 6px rgb(64, 64, 64);
+}
+
+#start:hover {
+    cursor: pointer;
+    background-color: rgb(153, 153, 234);
+}
+
+.data {
+    font-size: 20px;
+}
+
+@media screen and (max-width:1000px){
+    .gamecontainer {
+        width: 57%;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 16vw);
+        grid-template-rows: repeat(3, 16vw);
+    }
+    .gameinfo{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+}
+
+
+@media screen and (max-width:1024px) and (min-height:1200px)  {
+    .gamecontainer {
+        width: 60%;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 18vw);
+        grid-template-rows: repeat(3, 18vw);
+    }
+    .gameinfo{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+}
+
+
+@media screen and (max-width:550px)  {
+    .gamecontainer {
+        width: 75%;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 22vw);
+        grid-template-rows: repeat(3, 22vw);
+    }
+    .gameinfo{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+}
+
+
+@media screen and (max-width:800px) and (max-height:460px) {
+
+    .gameinfo {
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 2vw;
+        font-weight: 600;
+        font-style: normal;
+        margin: 10px auto;
+        width: 37%;
+    }
+
+    .container {
+        margin: 50px auto;
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: repeat(3, 10vw);
+        grid-template-rows: repeat(3, 10vw);
+    }
+    
+    .gamecontainer {
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        margin: 0px auto;
+        width: 80%;
+    }
+
+}
+
