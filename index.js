@@ -64,7 +64,6 @@ const checkWin = () => {
             bgmusic.currentTime = 0
             bgmusic.play()
             isdraw = false
-            console.log("in the won loop")
         }
     })
 
@@ -84,10 +83,9 @@ Array.from(boxes).forEach(element => {
             nextturn.play()
             checkWin(element)
             if (isdraw && !empty) {
-                document.querySelector(".info").innerText = " It,s Draw 😛, Try Again..."
+                document.querySelector(".info").innerText = " It's Draw 😛, Try Again..."
                 isgameover = true
                 turn = "X"
-                console.log("game draw ..")
                 gameover.play()
             }
             if (!isgameover && start) {
@@ -116,7 +114,6 @@ document.getElementById("start").addEventListener("click", () => {
     isdraw = true
     empty = true
     start = true
-    console.log("Restarting again ..")
     document.getElementsByClassName("info")[0].style.color = "black"
     bgmusic.pause()
     document.querySelector(".imgbox").getElementsByTagName("img")[0].style.width = "0px"
