@@ -45,7 +45,7 @@ h1 {
 }
 
 .box {
-    border: 1px solid black;
+    border:2px solid yellow;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,13 +53,17 @@ h1 {
     background-color: #ee90bf;
 }
 
+.container span{
+    font-size: 5vw;
+}
+
 .box:hover {
     cursor: pointer;
     background-color: rgb(195, 202, 161);
 }
 
-span {
-    font-size: 3vw;
+.data{
+    font-size: 1rem;
 }
 
 .gameinfo {
@@ -75,7 +79,6 @@ span {
     font-family: "Protest Revolution", sans-serif;
 }
 
-
 .imgbox img {
     width: 0px;
     height: auto;
@@ -85,7 +88,6 @@ span {
 }
 
 .info {
-    font-size: 0px;
     transition: font-size 1s ease-in-out;
     margin-top: 17px;
 }
@@ -153,8 +155,15 @@ audio {
     background-color: rgb(153, 153, 234);
 }
 
-.data {
-    font-size: 20px;
+
+.footer{
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(43, 43, 112);
+    color: white;
+    padding: 6px;
 }
 
 @media screen and (max-width:1000px){
@@ -171,6 +180,10 @@ audio {
         display: flex;
         flex-direction: column;
         width: max-content;
+        font-size: 4vw;
+    }
+    .data{
+        font-size: 5vw;
     }
 }
 
@@ -189,7 +202,12 @@ audio {
         display: flex;
         flex-direction: column;
         width: max-content;
+        font-size: 4vw;
     }
+    .data{
+        font-size: 5vw;
+    }
+
 }
 
 
@@ -207,7 +225,15 @@ audio {
         display: flex;
         flex-direction: column;
         width: max-content;
+        font-size: 4vw;
     }
+    .data{
+        font-size: 5vw;
+    }
+    #start{
+        font-size: 4vw;
+    }
+
 }
 
 
@@ -215,11 +241,15 @@ audio {
 
     .gameinfo {
         font-family: "Montserrat Alternates", sans-serif;
-        font-size: 2vw;
         font-weight: 600;
         font-style: normal;
         margin: 10px auto;
         width: 37%;
+        font-size: 4vw;
+    }
+
+    .data{
+        font-size: 5vw;
     }
 
     .container {
@@ -236,6 +266,30 @@ audio {
         display: flex;
         margin: 0px auto;
         width: 80%;
+    }
+
+}
+
+
+@media screen and (max-height:300px) {
+    .container{
+        margin: 30px auto;
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: repeat(3, 7vw);
+        grid-template-rows: repeat(3, 7vw);
+    }
+
+    .data{
+        font-size: 2vw;
+    }
+
+    .container span{
+        font-size: 4vw;
+    }
+
+    .imgbox img {
+        margin-top: 10px;
     }
 
 }

@@ -46,8 +46,7 @@ const checkWin = () => {
 
     wins.forEach(ele => {
         if (boxtext[ele[0]].innerText === boxtext[ele[1]].innerText && boxtext[ele[1]].innerText === boxtext[ele[2]].innerText && boxtext[ele[0]].innerText !== "") {
-            document.querySelector(".info").innerText = boxtext[ele[0]].innerText + " Won the game, Congratulations..."
-            document.getElementsByClassName("info")[0].style.fontSize = "1vw"
+            document.querySelector(".info").innerText = boxtext[ele[0]].innerText + " Won the game 🏆, Congratulations..."
             document.getElementsByClassName("info")[0].style.color = "yellow"
             isgameover = true
             turn = "X"
@@ -59,7 +58,7 @@ const checkWin = () => {
             b.style.color="red"
             c.style.color="red"
             console.log("a : ", a)
-            document.querySelector(".imgbox").getElementsByTagName("img")[0].style.width = "20vw"
+            document.querySelector(".imgbox").getElementsByTagName("img")[0].style.width = "24vw"
             document.querySelector(".imgbox").getElementsByTagName("img")[0].style.height = "auto"
             gameover.play()
             bgmusic.currentTime = 0
@@ -85,7 +84,7 @@ Array.from(boxes).forEach(element => {
             nextturn.play()
             checkWin(element)
             if (isdraw && !empty) {
-                document.querySelector(".info").innerText = " The Game was Draw, Try Again..."
+                document.querySelector(".info").innerText = " It,s Draw 😛, Try Again..."
                 isgameover = true
                 turn = "X"
                 console.log("game draw ..")
@@ -118,7 +117,6 @@ document.getElementById("start").addEventListener("click", () => {
     empty = true
     start = true
     console.log("Restarting again ..")
-    document.getElementsByClassName("info")[0].style.fontSize = "1vw"
     document.getElementsByClassName("info")[0].style.color = "black"
     bgmusic.pause()
     document.querySelector(".imgbox").getElementsByTagName("img")[0].style.width = "0px"
